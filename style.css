@@ -172,6 +172,42 @@ mark {
     border-radius: 50%;
 }
 
+.page4 {
+    background-color: white;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-page4 {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 600px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.project-card img {
+    width: 600px; 
+    height: 400px;
+}
+
+.project-card:hover {
+    filter: brightness(40%) ;
+    transition:filter .5s;
+    opacity: 1;
+
+}
+
+
+
 @media screen and (max-width: 600px) {
     .page1 {
         width: 800px;
