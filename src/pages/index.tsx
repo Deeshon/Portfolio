@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       <motion.div
-        className="flex flex-col text-center items-center pt-60 overflow-x-hidden w-full dark:text-white"
+        className="flex flex-col text-center items-center pt-24 overflow-x-hidden w-full dark:text-white"
         variants={containerVariants}
         initial="hidden"
         animate="show"
@@ -50,11 +50,11 @@ const Home = () => {
           </p>
         </motion.div>
         <motion.div
-          className="flex w-[25%] justify-between mt-6 text-lg"
+          className="flex w-full justify-center  mt-6 text-lg"
           variants={itemVariants}
         >
           <motion.div
-            className="group flex items-center w-[50%] justify-around relative cursor-pointer"
+            className="group flex items-center m-2 mx-4 justify-around relative cursor-pointer"
             variants={itemVariants}
           >
             <p>See My Projects</p>
@@ -62,7 +62,7 @@ const Home = () => {
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
           </motion.div>
           <motion.div
-            className="group flex items-center w-[40%] justify-around relative cursor-pointer"
+            className="group flex items-center m-2 mx-4 justify-around relative cursor-pointer"
             variants={itemVariants}
           >
             <p>More About Me</p>

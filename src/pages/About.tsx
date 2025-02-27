@@ -23,14 +23,14 @@ const itemVariants = {
 const About = () => {
   return (
     <motion.div
-      className="flex justify-center overflow-x-hidden"
+      className="flex justify-center items-center overflow-x-hidden"
       variants={containerVariants}
       initial="hidden"
       animate="show"
       exit="exit"
     >
       <motion.div
-        className="dark:text-white w-1/2 h-fit pt-32"
+        className="dark:text-white h-fit w-2/3"
         variants={itemVariants}
       >
         <motion.h1
@@ -40,7 +40,7 @@ const About = () => {
           ABOUT
         </motion.h1>
         <motion.hr variants={itemVariants} />
-        <motion.div className="mt-4 text-lg">
+        <motion.div className="mt-4 text-md">
           <motion.p variants={itemVariants}>
             Hey, my name is Deeshon Hunukumbura. I’m a full-stack developer with
             over two years of experience specializing in React, TypeScript, and

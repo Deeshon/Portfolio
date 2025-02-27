@@ -21,3 +21,10 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+
+.scrollable-div::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+

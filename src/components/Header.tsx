@@ -25,7 +25,7 @@ const Header = ({
   }, [darkMode]);
 
   return (
-    < div className="pt-24">
+    < div className="pt-12">
       <div className="p-5 h-[20%] px-24 flex justify-between items-center">
         <div className="size-10 logo"></div>
         <div className="flex w-28 justify-between items-center">
