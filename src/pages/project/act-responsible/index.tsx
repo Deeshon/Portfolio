@@ -17,7 +17,7 @@ const itemVariants = {
 const Project = () => {
   return (
     <motion.div
-      className="w-full h-96 m-10 mx-52"
+      className="w-full h-96 m-10 mx-52 dark:bg-black"
       variants={containerVariants}
       initial="hidden"
       animate="show"
@@ -46,7 +46,7 @@ const Project = () => {
         <motion.div variants={itemVariants}>
           <h1 className="text-ash text-2xl font-bold">HOME PAGE</h1>
         </motion.div>
-        <motion.div className="my-10 w-full grid gap-10" variants={containerVariants}>
+        <motion.div className="my-10 w-full grid gap-10 dark:bg-black" variants={containerVariants}>
           {["/act-1.png", "/act-2.png", "/act-3.png"].map((src, index) => (
             <motion.div
               key={index}

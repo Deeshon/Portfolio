@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       <motion.div
-        className="flex flex-col text-center items-center pt-24 overflow-x-hidden w-full dark:text-white"
+        className="flex flex-col text-center items-center pt-24 overflow-hidden w-full dark:text-white"
         variants={containerVariants}
         initial="hidden"
         animate="show"

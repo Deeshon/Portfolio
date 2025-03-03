@@ -1,62 +1,17 @@
 export const projects = [
     {
-        title: "Act Responsible -- Clone",
+        title: "Act Responsible",
         stack: 'Frontend Development',
-        image: '/act-responsible-image.png',
+        image: '/project/act-responsible.png',
+        url: '/project/act-responsible'
 
     },
     {
-        title: "Act Responsible -- Clone",
-        stack: 'Fullstack Development',
-        image: 'project-2.png',
-
-    },
-    {
-        title: "Act Responsible -- Clone",
+        title: "Trending Threads",
         stack: 'Frontend Development',
-        image: 'project-2.png',
+        image: '/project/trending-threads.png',
+        url: "/project/trending-threads"
 
     },
-    {
-        title: "Act Responsible -- Clone",
-        stack: 'Backend Development',
-        image: '/act-responsible-image.png',
-
-    },
-    {
-        title: "Act Responsible -- Clone",
-        stack: 'Fullstack Development',
-        image: '/act-responsible-image.png',
-
-    },
-    {
-        title: "Act Responsible -- Clone",
-        stack: 'Frontend Development',
-        image: '/act-responsible-image.png',
-
-    },
-    {
-        title: "Act Responsible -- Clone",
-        stack: 'Fullstack Development',
-        image: '/act-responsible-image.png',
-
-    },
-    {
-        title: "Act Responsible -- Clone",
-        stack: 'Frontend Development',
-        image: '/act-responsible-image.png',
-
-    },
-    {
-        title: "Act Responsible -- Clone",
-        stack: 'Backend Development',
-        image: '/act-responsible-image.png',
-
-    },
-    {
-        title: "Act Responsible -- Clone",
-        stack: 'Fullstack Development',
-        image: '/act-responsible-image.png',
-
-    }
+   
 ]

@@ -10,9 +10,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <div className="flex flex-col h-full w-full dark:bg-black cursor-default">
-      {location?.pathname !== '/project' && (<Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />)}
-      {location?.pathname === '/project' && isMenuOpen && (<Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />)}
-      {location?.pathname === '/project' && !isMenuOpen && (<ProjectHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />)}
+      {!location?.pathname.includes("/project") && (<Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />)}
+      {location?.pathname.includes("/project") && isMenuOpen && (<Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />)}
+      {location?.pathname.includes("/project") && !isMenuOpen && (<ProjectHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} pathname={location.pathname} />)}
       {!isMenuOpen && (<main className="flex-grow flex w-full h-full">{children}</main>)}
     </div>
   );

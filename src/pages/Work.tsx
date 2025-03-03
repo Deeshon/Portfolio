@@ -27,7 +27,7 @@ const Work = () => {
 
   return (
     <motion.div
-      className="w-full h-full flex justify-around mr-16 mt-10 dark:text-white"
+      className="w-full flex justify-around mr-16 mt-10 dark:text-white overflow-hidden"
       variants={containerVariants}
       initial="hidden"
       animate="show"
@@ -58,11 +58,11 @@ const Work = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="flex items-center text-left p-2 pb-4 relative group hover:cursor-pointer"
+              className="grid grid-cols-2 items-center relative py-4 group hover:cursor-pointer"
               onMouseEnter={() => setImageUrl(project.image || "")}
               variants={itemVariants}
             >
-              <Link to="/project" className="text-xl mr-10">
+              <Link to={project.url} className="text-xl mr-10">
                 {project.title}
               </Link>
               <motion.p className="text-lg text-left" variants={itemVariants}>

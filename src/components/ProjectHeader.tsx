@@ -8,9 +8,11 @@ import { motion } from "framer-motion";
 const ProjectHeader = ({
   isMenuOpen,
   setIsMenuOpen,
+  pathname
 }: {
   isMenuOpen: boolean;
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  pathname: string;
 }) => {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
@@ -47,7 +49,8 @@ const ProjectHeader = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="w-7/10 h-[500px] rounded-b-4xl bg-[url('/act-responsible-image.png')] bg-cover bg-center bg-no-repeat"
+          className="w-7/10 h-[500px] rounded-b-4xl"
+          style={{background: `url(${pathname}.png)`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}
         ></motion.div>
         
         <motion.div 
